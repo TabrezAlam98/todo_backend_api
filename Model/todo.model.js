@@ -1,9 +1,9 @@
 const mongoose=require("mongoose");
 
 const todosSchema=mongoose.Schema({
-   taskname:String,
-   status:String,
-   tag:String
+   name:String,
+   address:String,
+   
 })
 
 const TodosModel=mongoose.model('todo',todosSchema)

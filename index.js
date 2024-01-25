@@ -69,7 +69,7 @@ app.post("/login", async (req, res) => {
     }
 })
 
-app.use(authenticate)
+// app.use(authenticate)
 app.use('/todo',todoRouter)
 
 

@@ -3,7 +3,7 @@ const {TodosModel}=require("../Model/todo.model")
 
 const todoRouter=express.Router();
 
-todoRouter.get("/todo",async(req,res)=>{
+todoRouter.get("/",async(req,res)=>{
     const todos=await TodosModel.find()
     res.send(todos)
 })
